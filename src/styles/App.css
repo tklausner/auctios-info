@@ -4,29 +4,10 @@ body {
   font-family: 'Arial', sans-serif;
 }
 
-.hero-section h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.custom-button {
-  background-color: black;
-  color: white;
-  transition: 0.3s;
-  font-weight: 900;
-  /* smooth transition for hover effect */
-}
-
-.custom-button:hover {
-  background-color: white;
-  color: black;
-  border: 1px solid black;
-}
 .bg-dark {
   background-color: #000 !important;
 }
 
-/* Making the header sticky */
 .sticky-top {
   position: sticky;
   top: 0;
@@ -34,7 +15,6 @@ body {
   /* so it stays on top of other elements */
 }
 
-/* Enhancing the logo's appearance */
 .logo {
   filter: brightness(0) invert(1);
   transition: transform 0.3s ease;
@@ -45,7 +25,6 @@ body {
   /* subtle zoom effect on hover */
 }
 
-/* Enhancing the buttons */
 .demo-btn,
 .login-btn {
   transition: all 0.3s ease;
@@ -60,4 +39,70 @@ body {
 
 .login-btn:hover {
   border-color: #fff;
+}
+
+/* This will center the content of your Hero section */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+}
+
+.hero-logo img {
+  width: 75px;
+  margin-right: 10px;
+}
+
+.hero-logo h1 {
+  font-size: 4em;
+  font-family: "Gill Sans", sans-serif;
+  color: #000;
+  font-weight: 700;
+  text-align: center;
+  margin-left: -5px;
+  /* keep the pulling of the text slightly to overlap with the logo */
+}
+
+.hero-section p {
+  font-family: "Gill Sans", sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  color: #444;
+  margin: 1em 0;
+  /* It's now consistent with the inline styles in your React component */
+}
+
+.custom-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.7em 2em;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: #fff;
+  /* white background */
+  color: #000;
+  /* black text */
+  border: 1px solid #333;
+  /* adding a border for distinction */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  /* a subtle shadow to give an elevated look */
+  transform: translateY(-2px);
+  /* subtle upward movement on hover */
 }
