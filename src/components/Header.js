@@ -3,16 +3,15 @@ import logo from "../images/logo.svg";
 
 function Header() {
   return (
-    <header className="py-3 bg-dark">
+    <header className="py-3 bg-dark sticky-top">
       <div className="container-fluid">
         <div className="row">
           <div className="col-2 d-flex align-items-center">
             <img
-              style={{ filter: "invert(1" }}
               src={logo}
-              width={30}
+              width={40}
               alt="Auctios Logo"
-              className="ml-3"
+              className="ml-3 logo"
             />
           </div>
           <div className="col-10 d-flex justify-content-end align-items-center">
@@ -22,15 +21,14 @@ function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button
-                  className="btn btn-outline-light"
-                  style={{ marginRight: "15px" }}
-                >
+                <button className="btn btn-outline-light demo-btn">
                   Request Demo
                 </button>
               </a>
               <a href="https://auctios.xyz">
-                <button className="btn btn-outline-light">Login</button>
+                <button className="btn btn-outline-light login-btn">
+                  Login
+                </button>
               </a>
             </nav>
           </div>

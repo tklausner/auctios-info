@@ -25,3 +25,39 @@ body {
 .bg-dark {
   background-color: #000 !important;
 }
+
+/* Making the header sticky */
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  /* so it stays on top of other elements */
+}
+
+/* Enhancing the logo's appearance */
+.logo {
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  /* subtle zoom effect on hover */
+}
+
+/* Enhancing the buttons */
+.demo-btn,
+.login-btn {
+  transition: all 0.3s ease;
+  margin: 0 10px;
+  /* give some space between buttons */
+}
+
+.demo-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.login-btn:hover {
+  border-color: #fff;
+}
