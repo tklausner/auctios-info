@@ -12,7 +12,7 @@ function HeroSection() {
       <section
         className="hero-section py-5"
         style={{
-          height: "50vh",
+          height: "60vh",
           background:
             "linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.9))",
         }}
